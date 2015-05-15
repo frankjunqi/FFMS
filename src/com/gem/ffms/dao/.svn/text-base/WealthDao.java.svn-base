@@ -1,0 +1,17 @@
+package com.gem.ffms.dao;
+
+public interface WealthDao {
+	public void saveInCome();
+	
+	public void saveOutput();
+	
+	public void udpateIncome();
+	
+	public void updateOutput();
+	
+	public void deleteIncome();
+	
+	public void deleteOutput();
+	
+	
+}

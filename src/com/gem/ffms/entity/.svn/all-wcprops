@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/g03/!svn/ver/80/team6/MyFFMS/src/com/gem/ffms/entity
+END
+InputName.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/g03/!svn/ver/80/team6/MyFFMS/src/com/gem/ffms/entity/InputName.java
+END
+OutputName.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/g03/!svn/ver/80/team6/MyFFMS/src/com/gem/ffms/entity/OutputName.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/g03/!svn/ver/80/team6/MyFFMS/src/com/gem/ffms/entity/Role.java
+END
+IncomeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/g03/!svn/ver/80/team6/MyFFMS/src/com/gem/ffms/entity/IncomeInfo.java
+END
+RemindInFo.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/g03/!svn/ver/109/team6/MyFFMS/src/com/gem/ffms/entity/RemindInFo.java
+END
+AddressBookInFo.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/g03/!svn/ver/80/team6/MyFFMS/src/com/gem/ffms/entity/AddressBookInFo.java
+END
+OutputInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/g03/!svn/ver/80/team6/MyFFMS/src/com/gem/ffms/entity/OutputInfo.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/g03/!svn/ver/80/team6/MyFFMS/src/com/gem/ffms/entity/User.java
+END

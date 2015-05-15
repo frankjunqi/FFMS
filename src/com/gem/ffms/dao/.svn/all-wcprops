@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/g03/!svn/ver/128/team6/MyFFMS/src/com/gem/ffms/dao
+END
+DebtDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/g03/!svn/ver/80/team6/MyFFMS/src/com/gem/ffms/dao/DebtDao.java
+END
+UserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/g03/!svn/ver/160/team6/MyFFMS/src/com/gem/ffms/dao/UserDao.java
+END
+DBUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/g03/!svn/ver/128/team6/MyFFMS/src/com/gem/ffms/dao/DBUtil.java
+END
+WealthDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/g03/!svn/ver/80/team6/MyFFMS/src/com/gem/ffms/dao/WealthDao.java
+END
+AddressDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/g03/!svn/ver/112/team6/MyFFMS/src/com/gem/ffms/dao/AddressDao.java
+END
+MemorialDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/g03/!svn/ver/160/team6/MyFFMS/src/com/gem/ffms/dao/MemorialDao.java
+END
+CountDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/g03/!svn/ver/103/team6/MyFFMS/src/com/gem/ffms/dao/CountDao.java
+END

@@ -1,0 +1,75 @@
+package com.gem.ffms.impl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+
+import com.gem.ffms.dao.DBUtil;
+import com.gem.ffms.dao.UserDao;
+import com.gem.ffms.entity.User;
+import com.gem.ffms.util.MySQLJDBCImpl;
+
+
+public class UserDaoImpl implements UserDao{
+	private static Connection conn=null;
+	private static PreparedStatement pstmt=null;
+	private static ResultSet rs=null;
+	private static List<User> list=null;
+	
+	public void saveUser(User user) {
+		
+		
+	}
+
+	public void updateUser(User user) {
+		
+		
+	}
+
+	public void deleteUser(int user_id) {
+		
+		
+	}
+
+	public User getUserByName(String username) {
+//		List<User> userlist = new ArrayList<User>();
+		DBUtil dbuitl = null;
+		try {
+			dbuitl = new MySQLJDBCImpl();
+			conn = dbuitl.getConnection();
+			String sql="select * from userinfo_table where u_username like ?";
+			pstmt=conn.prepareStatement(sql);
+			pstmt.setString(1, "%"+username+"%");
+			rs=pstmt.executeQuery();
+			
+			while(rs.next()){
+				User user = new User();
+				user.setR_id(rs.getInt("u_id"));
+				user.setU_username(rs.getString("u_username"));
+				user.setU_password(rs.getString("u_password"));
+				user.setU_tel(rs.getString("u_tel"));
+				return user;
+			}
+			
+		return null;
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			dbuitl.closeResultSet(rs);
+			dbuitl.closePreparedStatement(pstmt);
+			dbuitl.closeConnection(conn);
+		}
+		return null;
+	}
+
+	public List queryAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

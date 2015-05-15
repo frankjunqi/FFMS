@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name></display-name>
+	<welcome-file-list>
+		<welcome-file>Loginon.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<filter>
+		<filter-name>encoding</filter-name>
+		<filter-class>com.gem.ffms.servlet.Encoding</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>encoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+    <servlet-name>ShowChartServlet</servlet-name>
+    <servlet-class>org.openflashchart.chartdemo.ShowChartServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ShowChartServlet</servlet-name>
+    <url-pattern>/ShowChartServlet</url-pattern>
+  </servlet-mapping>
+	
+	<servlet>
+
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>com.gem.ffms.servlet.loginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>getComListServlet</servlet-name>
+		<servlet-class>com.gem.ffms.servlet.getComListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>getComListServlet</servlet-name>
+		<url-pattern>/getComListServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+	<servlet>
+		<servlet-name>AddRemindServlet</servlet-name>
+		<servlet-class>com.gem.ffms.servlet.AddRemindServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddRemindServlet</servlet-name>
+		<url-pattern>/AddRemindServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>AddMessageServlet</servlet-name>
+		<servlet-class>com.gem.ffms.servlet.AddMessageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddMessageServlet</servlet-name>
+		<url-pattern>/AddMessageServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>MessageServlet</servlet-name>
+		<servlet-class>com.gem.ffms.servlet.MessageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MessageServlet</servlet-name>
+		<url-pattern>/getMessageServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>DeleteMessageServlet</servlet-name>
+		<servlet-class>com.gem.ffms.servlet.DeleteMessageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteMessageServlet</servlet-name>
+		<url-pattern>/DeleteMessageServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>UpdateAddressServlet</servlet-name>
+		<servlet-class>com.gem.ffms.servlet.UpdateAddressServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateAddressServlet</servlet-name>
+		<url-pattern>/UpdateAddressServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>DeleteRemindServlet</servlet-name>
+		<servlet-class>com.gem.ffms.servlet.DeleteRemindServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteRemindServlet</servlet-name>
+		<url-pattern>/DeleteRemindServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>UpdateRemindServlet</servlet-name>
+		<servlet-class>com.gem.ffms.servlet.UpdateRemindServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateRemindServlet</servlet-name>
+		<url-pattern>/UpdateRemindServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>countServlet</servlet-name>
+		<servlet-class>com.gem.ffms.servlet.countServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>countServlet</servlet-name>
+		<url-pattern>/countServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>countOutServlet</servlet-name>
+		<servlet-class>com.gem.ffms.servlet.countOutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>countOutServlet</servlet-name>
+		<url-pattern>/countOutServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetCountDataServlet</servlet-name>
+		<servlet-class>com.gem.ffms.servlet.GetCountDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetCountDataServlet</servlet-name>
+		<url-pattern>/GetCountDataServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <servlet-class>com.gem.ffms.servlet.UpdateUserServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <servlet-class>com.gem.ffms.servlet.DeleteUserServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    <servlet-name>QueryUserServlet</servlet-name>
+    <servlet-class>com.gem.ffms.servlet.QueryUserServlet</servlet-class>
+  </servlet>
+  
+  
+    <servlet>
+    <servlet-name>SaveUserServlet</servlet-name>
+    <servlet-class>com.gem.ffms.servlet.SaveUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QueryByIdServlet</servlet-name>
+    <servlet-class>com.gem.ffms.servlet.QueryByIdServlet</servlet-class>
+  </servlet>
+
+   <servlet-mapping>
+    <servlet-name>SaveUserServlet</servlet-name>
+    <url-pattern>/SaveUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <url-pattern>/UpdateUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <url-pattern>/DeleteUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>QueryUserServlet</servlet-name>
+    <url-pattern>/QueryUserServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>QueryByIdServlet</servlet-name>
+    <url-pattern>/QueryByIdServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+		<servlet-name>SaveOutputInfoServelt</servlet-name>
+		<servlet-class>com.gem.ffms.servlet.SaveOutputInfoServelt</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveOutputInfoServelt</servlet-name>
+		<url-pattern>/SaveOutputInfoServelt</url-pattern>
+	</servlet-mapping>
+	
+	  <servlet>
+    <servlet-name>ListWealthServlet</servlet-name>
+    <servlet-class>com.gem.ffms.servlet.ListWealthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListWealthServlet</servlet-name>
+    <url-pattern>/ListWealthServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>AddIncomeServlet</servlet-name>
+    <servlet-class>com.gem.ffms.servlet.AddIncomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddIncomeServlet</servlet-name>
+    <url-pattern>/AddIncomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>AlterIncomeServlet</servlet-name>
+  	<servlet-class>com.gem.ffms.servlet.AlterIncomeServlet</servlet-class>
+  </servlet>
+ <servlet-mapping>
+ 	<servlet-name>AlterIncomeServlet</servlet-name>
+ 	<url-pattern>/AlterIncomeServlet</url-pattern>
+ </servlet-mapping>
+
+<servlet>
+  	<servlet-name>GetOutputListServlet</servlet-name>
+  	<servlet-class>com.gem.ffms.servlet.GetOutputListServlet</servlet-class>
+  </servlet>
+ <servlet-mapping>
+ 	<servlet-name>GetOutputListServlet</servlet-name>
+ 	<url-pattern>/GetOutputListServlet</url-pattern>
+ </servlet-mapping>
+  
+
+</web-app>
